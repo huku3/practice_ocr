@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>画像をアップロードしてください</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <!-- 画像を指定するときはえんく必要 -->
+        <!-- <select name="ファイルを選択" id=""></select> -->
+
+        <input type="file" name="ocrFile" capture="camera">
+        <input type="submit" value="送信">
+        <br>
+        <h2>読み取り結果</h2>
+        {{ txt }}
+    </form>
+</body>
+
+</html>
